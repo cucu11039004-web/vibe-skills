@@ -7,6 +7,10 @@ Interview the user relentlessly until you reach a shared understanding. Map this
 
 Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled — the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
 
+If the runtime provides structured interactive questions with discrete choices, you **must** use them for each frontier question instead of plain text options. When possible, ask the whole frontier as multiple interactive questions in the same round. Reduce each decision to 2-5 concrete options whenever possible. Put your recommended option first and label it with "(Recommended)".
+
+Only use plain text question formatting when no interactive choice tool is available.
+
 Each question should be formatted like so:
 
 ```
